@@ -1,4 +1,4 @@
-chrome.browserAction.onClicked.addListener(tab => {
+chrome.action.onClicked.addListener(tab => {
 	if (tab.url.startsWith('chrome://')) return;
 	if (tab.url.startsWith('file://')) return;
 
